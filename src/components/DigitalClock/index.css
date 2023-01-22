@@ -8,21 +8,17 @@
   margin-bottom: 16px;
 }
 
-.digit {
-  padding-right: 1%;
-  padding-left: 1%;
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
-  --themecolor: black;
-  --themeinvert: white;
   --coloncolor: white;
   --neon: rgba(255, 255, 255, 0.75);
 }
+
 @keyframes blink {
   0% {
     filter: opacity(1);
@@ -31,15 +27,7 @@
     filter: opacity(0);
   }
 }
-.main-time {
-  display: flex;
-  width: 90%;
-}
-.main-time svg {
-  height: 35vw;
-  margin: 5px;
-  filter: drop-shadow(0 0 1vw var(--neon));
-}
+
 .colon {
   font-family: SansSerif, Arial, serif;
   font-size: 34pt;
@@ -47,8 +35,4 @@
   text-shadow: 0 0 2vw var(--neon);
   animation: blink 1s both infinite ease-in;
   float: left;
-}
-.main-time svg g polygon {
-  stroke: var(--coloncolor);
-  stroke-width: 0.1px;
 }
