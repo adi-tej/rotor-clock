@@ -1,0 +1,40 @@
+.analog {
+  width: 206px;
+  height: 206px;
+  background: linear-gradient(to bottom, black 66.5%, #d9d7dc 33.5%);
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  position: relative;
+}
+
+.hr, .min, .sec {
+  width: 1%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  transform-origin: bottom;
+  z-index: 2;
+}
+
+/* Different length of different hands of clock */
+.hr {
+  height: 25%;
+  background-color: #fff;
+  transform-origin: 50% 75%;
+  width: 5px;
+}
+
+.min {
+  height: 38%;
+  background-color: #fff;
+  transform-origin: 50% 85%;
+  width: 3px;
+}
+
+.sec {
+  height: 43%;
+  background-color: #fff;
+  width: 1px;
+}
